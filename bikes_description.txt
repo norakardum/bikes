@@ -1,0 +1,24 @@
+=========================================
+Karakteristike skupa podataka
+=========================================	
+	- instant: indeks zapisa
+	- dteday : datum
+	- season : godišnje doba (1:proljeće, 2:ljeto, 3:jesen, 4:zima)
+	- yr : godina (0: 2011, 1:2012)
+	- mnth : mjeec (1 do 12)
+	- hr : sat (0 do 23)
+	- holiday : je li bio praznik ili ne (preuzeto s http://dchr.dc.gov/page/holiday-schedule)
+	- weekday : dan u tjednu
+	- workingday : 1 ako nije vikend ili praznik, inače 0
+	+ vremenski uvjeti : 
+		- 1: vedro, nekoliko oblaka, djelomično oblačno
+		- 2: izmaglica + oblačno, izmaglica + rastrgani oblaci, izmaglica + nekoliko oblaka, izmaglica
+		- 3: lagani snijeg, lagana kiša + grmljavina + razbacani oblaci, lagana kiša + razbacani oblaci
+		- 4: jaka kiša + ledene kuglice + grmljavina + izmaglica, snijeg + magla
+	- temp : Normalizirana temperatura u °C. Vrijednosti su podijeljene s 41 (max).
+	- atemp: Normaliziran osjećaj temperature u °C. Vrijednosti su podijeljene s 50 (max).
+	- hum: Normalizirana vlažnost zraka. Vrijednosti su podijeljene sa 100 (max).
+	- windspeed: Normalizirana brzina vjetra. Vrijednosti su podijeljene sa 67 (max).
+	- casual: broj neregistriranih korisnika
+	- registered: broj registriranih korisnika
+	- cnt: ukupan broj iznajmljivanja bicikala, uključujući registrirane i neregistrirane korisnike (casual i registered)
